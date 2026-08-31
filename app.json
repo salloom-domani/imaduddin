@@ -11,7 +11,9 @@
       "icon": "./assets/images/icon.png",
       "bundleIdentifier": "tech.siters.imaduddin",
       "infoPlist": {
-        "UIBackgroundModes": ["processing"],
+        "UIBackgroundModes": [
+          "processing"
+        ],
         "BGTaskSchedulerPermittedIdentifiers": [
           "com.expo.modules.backgroundtask.processing"
         ]
@@ -58,6 +60,17 @@
         {
           "icon": "./assets/images/notification-icon.png",
           "color": "#B99F6C"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "enableBundleCompression": true,
+            "buildArchs": ["arm64-v8a"]
+          }
         }
       ]
     ],
